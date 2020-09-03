@@ -31,6 +31,8 @@ def turn(board)
   if valid_move?(board, index)
     move(board, index)
     display_board(board)
+  elsif !valid_move?(board, index)
+    puts "Invalid Entry."
   else
     turn(board)
   end
